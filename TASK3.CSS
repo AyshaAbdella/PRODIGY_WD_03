@@ -1,0 +1,142 @@
+/* styles.css */
+body {
+  font-family: 'Press Start 2P', cursive;
+  font-size: large;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+  background-image: url(free-photo-of-abstract-orange-and-gray-textured-wall-art.jpeg);
+}
+
+.container {
+  text-align: center;
+  background-color: #361b04e4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  max-height: 90vh; /* Ensure it fits within the viewport */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+h1 {
+  color: rgb(177, 121, 100);
+  margin-bottom: 10px;
+  font-size: 3rem;
+}
+
+#status {
+  color: rgb(40, 198, 210);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px); /* Smaller cells */
+  grid-template-rows: repeat(3, 80px);
+  gap: 5px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #ddd;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #ccc;
+}
+
+#scoreboard {
+  color: rgb(40, 198, 210);
+
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+#modeSelection {
+  margin-bottom: 10px;
+}
+
+#modeSelection button {
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  margin: 3px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #436080;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+#modeSelection button:hover {
+  background-color: #436080;
+}
+
+#symbolSelection {
+  margin-bottom: 10px;
+}
+
+#symbolSelection p {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+#symbolSelection button {
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  margin: 3px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+#symbolSelection button:hover {
+  background-color: #218838;
+}
+
+#menuBar {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+#menuBar button {
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #436080;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+#menuBar button:hover {
+  background-color: #436080;
+}
+
+.winning-cell {
+  background-color: #4caf50; /* Green background for winning cells */
+  color: rgb(58, 202, 70); /* White text for better contrast */
+}
